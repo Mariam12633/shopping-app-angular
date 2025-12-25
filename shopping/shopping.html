@@ -1,0 +1,35 @@
+<div class="tout">
+  <div class="c">
+  <ul >
+ <li (click)="category()" >Category</li>
+ <li routerLink="/shopping" >Home</li>
+ <li routerLink="/panier">Panier </li>
+ <li routerLink="/user-log-in">Inscrire</li>
+ <li routerLink="/users">Connecter</li>
+  </ul>
+  </div>
+  <ul *ngIf="c" class="category" >
+  <li  *ngFor="let c of categories" (click)="show_products(c)">{{c}}</li> 
+ </ul>
+ 
+ 
+<div class="produit" *ngFor="let item of tab">
+  
+    <img [src]="item.img"
+     [routerLink]="['/product-details', item.get_id()]">
+ 
+  <div class="description" >
+   <h3> {{item.get_id()}}</h3>
+   <p> {{item.product_title}}</p>
+  </div>
+  <div class="prix" >
+    <p>{{item.get_price()}}</p>
+    <button (click)="ajouter(item)" >BUY</button>
+  </div>
+</div>
+</div>
+<button  routerLink="/panier">Afficher panier</button>
+
+
+
+

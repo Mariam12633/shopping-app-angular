@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.angular/
+out-tsc/
+npm-debug.log
+package-lock.json
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

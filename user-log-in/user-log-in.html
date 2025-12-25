@@ -1,0 +1,12 @@
+<div class="Users" >
+  <h1>Inscrire</h1>
+  <div>
+  <input type="text" name="username" [(ngModel)]="NewtUser"   placeholder="Nom d'utilisateur">
+</div>
+<div>
+  <input type="text" name="passworld" [(ngModel)]="Newpassworld"  placeholder="Mot de passe">
+</div>
+<button (click)="AddUser()" >Entrer</button>
+<button  routerLink="/users">Retour</button>
+<p>{{message}}</p>
+</div>

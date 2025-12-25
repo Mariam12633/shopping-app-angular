@@ -1,0 +1,35 @@
+.Users{
+  margin: auto;
+ background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+ width: 400px;
+ margin-top: 60px;
+ align-items: center;
+}
+input{
+padding: 13px  30px;
+background-color: gainsboro;
+border:none ;
+font-family:'Courier New', Courier, monospace;
+
+}
+button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #67788a;
+  color: white;
+  transition: 0.2s;
+  height: 40px;
+  width: 200px;
+
+
+}
+button:hover {
+  background: #2c5282;
+}
+
+ 

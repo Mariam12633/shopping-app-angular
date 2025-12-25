@@ -1,0 +1,27 @@
+
+<p>Panier</p>
+<div>
+<div class="produit" *ngFor="let item of cart.items_product"
+[ngStyle]="{
+  'background-color':item.quantity < 10  ? '#ffe6e6' : 'white'
+}"
+>
+  
+    <img  [src]="item.item_product.img">
+ 
+  <div class="description">
+   <h3> {{item.item_product.get_id()}}</h3>
+   <p> {{item.item_product.product_title}}</p>
+  </div>
+  <div class="prix">
+    <p>Quantity : {{item.quantity}}</p>
+    <p> prix:{{item.total}}</p>
+   <button (click)="ajouter(item.item_product)">+</button>
+    <button (click)="substract(item.item_product)">-</button>
+  </div>
+</div>
+<div class="totale">
+   <p> Totale:{{cart.total_prix}}</p>
+  </div>
+</div>
+<button routerLink="/shopping">Retour</button>

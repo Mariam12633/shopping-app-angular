@@ -1,0 +1,13 @@
+<div class="Users" *ngIf="!Inscrire">
+  <h1>LOGIN</h1>
+  <div>
+  <input type="text" name="username" [(ngModel)]="currentUser"   placeholder="Nom d'utilisateur">
+</div>
+<div>
+  <input type="text" name="passworld" [(ngModel)]="passworld"  placeholder="Mot de passe">
+</div>
+<button (click)="check()">Confirmer</button>
+<button  routerLink="/user-log-in">inscrire</button>
+<p>{{message}}</p>
+</div>
+

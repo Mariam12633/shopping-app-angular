@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": "AER22",
+      "name": "Tablette SAM 12 Pouce",
+      "price": 2334,
+      "category": "Tablette",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhUSEBISFRUVGBgWFRUWFxgZGBcXFhUWFhcXFRUYHSgg..."
+    },
+    {
+      "id": "EFRRR",
+      "name": "IPHONE 14",
+      "price": 11000,
+      "category": "Phone",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QDxAPDQ8NDw4NDQ8ODQ0NDw8PDQ0OFREWFhURFRUYHSgg..."
+    },
+    {
+      "id": "SQZEE",
+      "name": "SMART TV 48 POUCE",
+      "price": 8000,
+      "category": "TV",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhITEBISFRUVGBgWFRUWFxgZGBcfHyghGBonGxUXHS..."
+    },
+    {
+      "id": "RTVVV",
+      "name": "IPHONE 13",
+      "price": 1100,
+      "category": "PHONE",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhITEBISFRUVGBgWFRUWFhcYGBcfHyghGBonGxUXHS..."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "mariam",
+      "password": "mariam12"
+    },
+    {
+      "id": 2,
+      "username": "maria",
+      "password": "maria"
+    },
+    {
+      "id": 3,
+      "username": "laila",
+      "password": "laila12"
+    }
+  ],
+  "cart": {
+    "items": [],
+    "totalPrice": 0,
+    "totalQuantity": 0
+  }
+}

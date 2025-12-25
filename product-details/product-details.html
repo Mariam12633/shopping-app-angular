@@ -1,0 +1,12 @@
+<div *ngIf="product"> 
+  <img [src]="product?.img">
+
+  <h2>{{ product?.product_title }}</h2>
+  <p>ID : {{ product?.get_id() }}</p>
+  <p>Prix : {{ product?.get_price() }} DH</p>
+
+ <button routerLink="/shopping">Retour</button>
+ <button (click)="Ajouter(product)">Ajouter</button>
+ <button routerLink="/panier" >Afficher_panier</button>
+</div>
+
