@@ -1,0 +1,18 @@
+name: Angular Doctor
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  angular-doctor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Angular Doctor
+        uses: antonygiomarxdev/angular-doctor@v1.2.0
+        with:
+          directory: .
+          verbose: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
